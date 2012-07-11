@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> My first HTML page </title>
+<link rel="stylesheet" href="mansifirst.css" type="text/stylesheet" />
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+</head>
+<body>
+<div id="main">
+<span id="line1">I'm a recent college grad from <span id="colg">USC</span>, food enthusiast and <a href="#">aspiring</a> front-end developer. I am a wanderer of sorts and love to see new <a href="#">places</a> and experience new cultures.<br />
+I'm from <span id="in">In</span><span id="di">d</span><span id="let">ia</span> </span>
+<div id="one">
+</div>
+<div id="three">
+<p>Click Me! For More Information</p>
+</div>
+<div id="two">
+</div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<span class="hidden" style="display: none"> You can check out <a href="http://www.mansinarain.me/"> My Web Page </a> </span>
+
+<span class="hidden" style="display: none">You can check out my Linkedin profile <a href="http://www.linkedin.com/in/mansinarain/">LINKEDIN</a> </span>
+
+<span class="hidden" style="display: none">You can check out my project <span id="video" style="color: blue" >Videos</span></span>
+<div id="canvasid">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/LSWfJwgrrV8" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="canvasid2">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/m18xz6qPYbc" frameborder="0" allowfullscreen></iframe>
+</div>
+<script>
+
+	$('#three').click(function(){
+				$(this).animate({top:'182px'},500)
+			.animate({left:'180px'	},1000).animate({width:'40px',height:'40px'},1000);
+			});
+			
+	$('#three').click(function(){
+				$("#one").animate({left:'180px'},200)
+			.animate({top:'382px'	},1000).animate({width:'40px',height:'40px'},1000);
+			});	
+					
+	$('#three').click(function(){
+				$("#two").animate({top:'282px'},500)
+			.animate({left:'180px'	},1000).animate({width:'40px',height:'40px'},1000);
+			});	
+		$('#three').click(function(){
+				$("#three").find("p").text("");
+			});				
+		
+	$('#three').click(function(){
+				$(".hidden").show(3000);
+			});	
+	$('#video').click(function(){
+				$("#canvasid").show();
+			});	
+			$('#video').click(function(){
+				$("#canvasid2").show();
+			});							
+</script>
+</body>
+</html>
